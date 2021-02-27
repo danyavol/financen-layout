@@ -1,0 +1,42 @@
+:root {
+    --light-text-color: #FFFFFF;
+    --text-color: #252B42;
+    --second-text-color: #737373;
+
+    --primary-color: #23A6F0;
+    --disabled-element-color: #8EC2F2;
+    --secondary: #F3CD03;
+
+    --dark-background-color: #252B42;
+    --light-gray-1: #FAFAFA;
+    
+    --success-color: #2DC071;
+    --background-gradient-1: linear-gradient(270deg, #D71489 -1.04%, #004788 100%);
+}
+
+button.btn {
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button.btn.btn-round {
+    border-radius: 37px;
+    padding: 15px 36px;
+}
+
+button.btn.primary-color {
+    background-color: var(--primary-color);
+}
+
+button.btn.btn-outline {
+    border: 1px solid var(--light-text-color);
+    background-color: transparent;
+}
+
+.btn-text {
+    font-weight: 700;
+}
