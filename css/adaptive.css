@@ -85,6 +85,7 @@
         top: 0;
         box-sizing: border-box;
         z-index: 999;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
     }
 
     header .navbar .logo .icons {

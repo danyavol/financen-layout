@@ -41,3 +41,19 @@ button.btn.btn-outline {
 .btn-text {
     font-weight: 700;
 }
+
+button.btn.primary-color:hover {
+    transition: 0.15s;
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+button.btn.btn-outline:hover {
+    transition: 0.15s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+    transition: 0.15s;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
