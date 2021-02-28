@@ -132,7 +132,7 @@ header .header .header-content .header-content-buttons button:first-child {
     justify-content: space-between;
 }
 
-.card-item {
+#features .cards .card-item {
     border-radius: 5px;
     padding: 30px;
     display: flex;
@@ -141,25 +141,94 @@ header .header .header-content .header-content-buttons button:first-child {
     box-sizing: border-box;
 }
 
-.card-item.light-color {
+#features .cards .card-item.light-color {
     background-color: var(--light-gray-1);
     color: var(--text-color)
 }
 
-.card-item.primary-color {
+#features .cards .card-item.primary-color {
     background-color: var(--primary-color);
     color: var(--light-text-color)
 }
 
-.card-item img {
+#features .cards .card-item img {
     margin-bottom: 10px;
     width: 50px;
 }
 
-.card-item * {
+#features .cards .card-item * {
     color: inherit;
     margin: auto;
     text-align: center;
 }
 
 /* ---------- Features ---------- */
+
+/* ========== Reviews ========== */
+
+#reviews {
+    background-color: var(--disabled-element-color);
+}
+
+#reviews .description {
+    margin: 100px 0 120px 0;
+    text-align: center;
+}
+
+#reviews .description p {
+    margin: 10px auto 0 auto;
+    width: 500px;
+}
+
+#reviews .review-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+#reviews .review-cards .card-item {
+    position: relative;
+    background-color: var(--light-background-color);
+    color: var(--second-text-color);
+    padding: 30px 40px;
+    margin-left: 50px;
+}
+
+#reviews .review-cards .card-item:first-child {
+    margin-right: 90px;
+}
+
+#reviews .review-cards .card-item * {
+    color: inherit;
+    margin: auto;
+    text-align: left;
+}
+
+#reviews .review-cards .card-item > img {
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    width: 72px;
+}
+
+#reviews .review-cards .card-item > h3 {
+    color: var(--text-color);
+}
+
+#reviews .review-cards .card-item > h6 {
+    margin-top: 5px;
+}
+
+#reviews .review-cards .card-item .stars {
+    margin: 15px 0;
+}
+
+#reviews .review-cards .card-item .stars img {
+    width: 20px;
+}
+
+#reviews .review-cards .card-item > p {
+    text-align: justify;
+}
+
+/* ---------- Reviews ---------- */

@@ -19,6 +19,12 @@
     header .header img {
         height: 495px;
     }
+
+    /* Reviews */
+
+    #reviews .review-cards .card-item:first-child {
+        margin-right: 40px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -114,5 +120,32 @@
     #features .cards .card-item {
         margin-bottom: 30px;
         width: 80%;
+    }
+
+    /* Reviews */
+
+    #reviews .review-cards {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    #reviews .review-cards .card-item > img {
+        display: none;
+    }
+
+    #reviews .review-cards .card-item:first-child {
+        margin: 0 40px 30px 40px;
+    }
+
+    #reviews .review-cards .card-item {
+        margin: 0 40px;
+    }
+
+    #reviews .description {
+        margin: 75px 0 60px 0;
+    }
+
+    #reviews .description p {
+        width: 100%;
     }
 }
