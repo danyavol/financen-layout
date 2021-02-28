@@ -5,10 +5,6 @@ body {
     flex-direction: column;
 }
 
-.container {
-    width: 1050px;
-    margin: auto;
-}
 
 /* ========== Header ========== */
 
@@ -16,6 +12,7 @@ header {
     width: 100%;
     background-image: url('../img/header-cover.png');
     background-position: top;
+    background-size: cover;
 }
 
 .header-filter{
@@ -29,11 +26,22 @@ header .navbar {
     padding-top: 20px;
 }
 
+header .navbar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .logo .icons {
+    display: none;
+}
+
 header .navbar .navbar-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: calc(100% - 250px);
+    margin-left: 10px;
 }
 
 header .navbar .navbar-content .navbar-navigation {
@@ -49,6 +57,7 @@ header .navbar .navbar-content .navbar-navigation a {
 header .navbar .navbar-content .navbar-login {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 header .navbar .navbar-content .navbar-login .login-button{
@@ -75,11 +84,12 @@ header .header {
     display: flex;
     justify-content: space-between;
     margin-top: 36px;
+    align-items: flex-end;
 }
 
 header .header > .header-content {
     width: calc(50%);
-    margin-top: 120px;
+    margin-bottom: 80px;
 }
 
 header .header .header-content h4 {
@@ -149,6 +159,7 @@ header .header .header-content .header-content-buttons button:first-child {
 .card-item * {
     color: inherit;
     margin: auto;
+    text-align: center;
 }
 
 /* ---------- Features ---------- */

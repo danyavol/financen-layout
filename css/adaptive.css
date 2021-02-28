@@ -1,0 +1,118 @@
+/* XX-Large devices (larger desktops) */
+.container {
+    width: 1050px;
+    margin: auto;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) { 
+    .container {
+        width: 740px;
+    }
+
+    /* Header */
+
+    header .navbar .navbar-content {
+        width: 100%;
+    }
+
+    header .header img {
+        height: 495px;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+    .container {
+        width: 100%;
+    }
+
+    /* Header */
+
+    header .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header img {
+        height: 425px;
+    }
+
+    header .header .header-content {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header .header .header-content h1 {
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    header .header .header-content .header-content-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header .header-content .header-content-buttons button:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    header .navbar {
+        background: var(--dark-background-color);
+        padding: 20px 20px 0 20px;
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    header .navbar .logo .icons {
+        display: block;
+    }
+
+    header .navbar .navbar-content {
+        margin: 80px 0;
+        justify-content: center;
+    }
+
+    header .navbar .navbar-content .navbar-navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .navbar .navbar-content .navbar-navigation li {
+        margin-bottom: 20px;
+    }
+
+    header .navbar .navbar-content .navbar-navigation a {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    header .navbar .navbar-content .navbar-login {
+        display: none;
+    }
+
+    /* Features */
+
+    #features .description {
+        margin-bottom: 75px;
+        margin-top: 100px;
+    }
+
+    #features .description h2, #features .description p  {
+        width: 100%;
+    }
+
+    #features .cards {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #features .cards .card-item {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
