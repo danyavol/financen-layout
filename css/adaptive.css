@@ -4,6 +4,8 @@
     margin: auto;
 }
 
+
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1200px) { 
     .container {
@@ -14,6 +16,11 @@
 
     header .navbar .navbar-content {
         width: 100%;
+        justify-content: flex-end;
+    }
+
+    header .navbar .navbar-content .navbar-login {
+        display: none;
     }
 
     header .header img {
@@ -38,6 +45,8 @@
     header .header {
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
+        padding-top: 115px;
     }
 
     header .header img {
@@ -68,9 +77,14 @@
 
     header .navbar {
         background: var(--dark-background-color);
-        padding: 20px 20px 0 20px;
+        padding: 20px;
         flex-direction: column;
         align-items: unset;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        box-sizing: border-box;
+        z-index: 999;
     }
 
     header .navbar .logo .icons {
@@ -78,13 +92,27 @@
     }
 
     header .navbar .navbar-content {
-        margin: 80px 0;
+        margin: 0;
         justify-content: center;
+        align-items: flex-start;
+        overflow: hidden;
+        height: 408px;
+        transition: height 0.4s ease-in-out;
+    }
+
+    #hamburger {
+        cursor: pointer;
+    }
+
+    .h-0 {
+        height: 0 !important;
+        transition: height 0.4s ease-in-out;
     }
 
     header .navbar .navbar-content .navbar-navigation {
         flex-direction: column;
         align-items: center;
+        margin: 80px 0 60px 0;
     }
 
     header .navbar .navbar-content .navbar-navigation li {

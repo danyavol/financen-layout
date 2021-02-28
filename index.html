@@ -19,10 +19,10 @@
                     <div class="logo">
                         <h3 >BrandName</h3>
                         <div class="icons">
-                            <img src="./img/hamburger.svg" alt="hamburger" />
+                            <img src="./img/hamburger.svg" alt="hamburger" id="hamburger"/>
                         </div>
                     </div>
-                    <div class="navbar-content">
+                    <div class="navbar-content h-0">
                         <ul class="navbar-navigation">
                             <li><a href="#">Home</a></li>
                             <li><a href="#features">Product</a></li>
@@ -126,5 +126,12 @@
     <!-- Footer -->
     <footer></footer>
     <!-- End Footer -->
+
+    <script>
+        const $navbar = document.querySelector('header .navbar .navbar-content');
+        document.getElementById('hamburger').addEventListener('click', () => {
+            $navbar.classList.toggle('h-0');
+        });
+    </script>
 </body>
 </html>
