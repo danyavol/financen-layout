@@ -239,7 +239,47 @@
 
     #pricing .description p {
         width: 100%;
-        /* padding-right: 10px;
-        padding-left: 10px; */
+    }
+
+    /* Footer */
+
+    footer .contact-us .content {
+        flex-direction: column;
+        padding: 0 10px;
+        padding-top: 80px;
+    }
+
+    footer .contact-us .content > div {
+        text-align: center;
+    }
+
+    footer .contact-us .content > button {
+        margin: 50px 0 46px;
+    }
+
+    footer .navigation .content {
+        flex-direction: column;
+        margin-left: 15%;
+        padding-right: 10px;
+    }
+
+    footer .navigation .content > div {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    footer .rights-reserved .content {
+        margin-left: 15%;
+        padding-right: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .rights-reserved .content .links {
+        margin: 50px 0 30px;
+    }
+
+    footer .rights-reserved .content .links img:first-child {
+        margin-left: 0;
     }
 }
