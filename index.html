@@ -227,6 +227,12 @@
         document.getElementById('hamburger').addEventListener('click', () => {
             $navbar.classList.toggle('h-0');
         });
+
+        document.querySelectorAll('header .navbar-navigation a').forEach(elem => {
+            elem.addEventListener('click', () => {
+                $navbar.classList.add('h-0');
+            });
+        });
     </script>
 </body>
 </html>
