@@ -232,3 +232,67 @@ header .header .header-content .header-content-buttons button:first-child {
 }
 
 /* ---------- Reviews ---------- */
+
+/* ========== Clients ========== */
+
+#clients {
+    background: var(--dark-background-color);
+}
+
+#clients .clients-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 70px 0;
+}
+
+#clients .subscription {
+    padding: 30px 50px;
+    margin-bottom: 20px;
+    background: var(--background-gradient-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#clients .subscription h3 {
+    width: 300px;
+    margin-right: 20px;
+}
+
+#clients .subscription .subscription-input-group {
+    background: #F9F9F9;
+    padding: 1px;
+    border-radius: 5px;
+    display: flex;
+    height: 60px;
+}
+
+#clients .subscription .subscription-input-group input {
+    height: 100%;
+    width: 350px;
+    border: 0;
+    background: #F9F9F9;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: var(--text-color);
+    padding: 0 20px;
+}
+
+#clients .subscription .subscription-input-group button {
+    background: var(--primary-color);
+    color: var(--light-text-color);
+    border-radius: 0 5px 5px 0;
+    border: 0;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 22px;
+    outline: none;
+    transition: box-shadow 0.2s;
+}
+
+#clients .subscription .subscription-input-group button:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+/* ---------- Clients ---------- */

@@ -32,6 +32,12 @@
     #reviews .review-cards .card-item:first-child {
         margin-right: 40px;
     }
+
+    /* Clients */
+
+    #clients .subscription .subscription-input-group input {
+        width: 250px;
+    }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -176,5 +182,31 @@
 
     #reviews .description p {
         width: 100%;
+    }
+
+    /* Clients */
+
+    #clients .clients-logo {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    #clients .clients-logo img {
+        transform: scale(1.4);
+        margin: 50px 0; 
+    }
+
+    #clients .subscription {
+        flex-direction: column;
+    }
+
+    #clients .subscription h3 {
+        margin-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #clients .subscription .subscription-input-group input {
+        width: 190px;
     }
 }
